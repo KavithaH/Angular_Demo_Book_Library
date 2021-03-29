@@ -1,0 +1,43 @@
+<div class="content" role="main">
+
+    <!-- Highlight Card -->
+    <div class="card highlight-card card-small">
+  
+      
+  
+      <span>Fill your Name & Location details to access online Book Library</span>
+  
+      
+  
+    </div>
+  
+   
+    <div class="card-container">
+      <label>First Name</label>
+      <input type="text"/>
+      <label>Last Name</label>
+      <input type="text"/>
+      <label>Location</label>
+      <select id="sel" (change)="show($event)">
+        <option value="">Select Country</option>
+        <option value="India">India</option>
+        <option value="Nepal">Nepal</option>
+        <option value="China">China</option>
+        <option value="USA">USA</option>
+    </select>
+  
+    </div>
+    <div>
+      <button type="button" 
+      (click)="fnBookLibrary()">
+                  <span>SUBMIT</span>
+              </button>
+              <!-- <button id="btn-submit" [routerLink]="['/booklibrary',loc, 'edit']" >
+                <span>SUBMIT</span> </button> -->
+              <!-- <a routerLink="booklibrary">home</a> -->
+    </div>
+  
+    <!-- Next Steps -->
+      
+  
+  </div>
